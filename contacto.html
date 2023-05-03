@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Cinefilos Argentinos</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <div><img class= "logo" src="imagenes/logo.png"></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pelis.html">Estrenos</a></li>
+                        <li><a href="concursos.html">Concursos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form class="formulario-consulta">
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+
+                <label for="correoelectronico">Correo Electrónico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de Cinefilos Argentinos?</label>                
+                
+                <input type="submit" value="Enviar" class="enviar">
+
+            </form>
+            <div class="social media aca?"></div>
+        </main>
+        <footer>
+            <img src="imagenes/logo-blanco.png">
+            <p class="copyright">&copy Copyright Cinefilos Argentinos - 2023</p>
+            <p class="copyright"><small>Grupo 5 - (Ivon E. Escobar, Victor Galarza)</small></p>
+        </footer>
+    </body>
+</html>

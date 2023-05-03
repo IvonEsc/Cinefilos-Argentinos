@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Concursos - Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <div><img class= "logo" src="imagenes/logo.png"></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pelis.html">Estrenos</a></li>
+                        <li><a href="concursos.html">Concursos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="concurso">
+                <h1>¡Concurso del mes!</h1>
+                <p>Anotate en el concurso, cada mes sorteamos merchandising de una pelicula de estreno.<br/>
+                Son 5 premios, asique no te olvides de participar. <br/>
+                Apurate y completa el formulario!!! <br/>
+                <small>Los sorteos cierran el ultimo viernes de cada mes.</small>
+                </p>
+                <div class="imagen-concurso"><img src="imagenes/sorteo.jpg" alt="Imagen de concurso"></div>
+                <h1>Suerte!</h1>
+            </div>
+            <form>
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+
+                <label for="dni">DNI (Ducumento Unico de Identidad)</label>
+                <input type="number" id="dni" class="input-padron" required>
+
+                <label for="correoelectronico">Correo Electrónico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+                
+                <fieldset>
+                    <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de Cinefilos Argentinos?</label>                
+                
+                <input type="submit" value="Enviar" class="enviar">
+
+            </form>
+        </main>
+
+        <footer>
+            <img src="imagenes/logo-blanco.png">
+            <p class="copyright">&copy Copyright Cinefilos Argentinos - 2023</p>
+            <p class="copyright"><small>Grupo 5 - (Ivon E. Escobar, Victor Galarza)</small></p>
+        </footer>
+    </body>
+</html>
