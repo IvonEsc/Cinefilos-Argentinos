@@ -272,12 +272,18 @@ form legend {
 }
 
 .mapa-contenido {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 940px;
-    margin: 0 auto;
 
+    overflow:hidden;
+    padding-bottom:30%;
+    position:relative;
+    height:0;
+}
+.mapa-contenido iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 .video {
