@@ -1,45 +1,47 @@
-body{
+body {
     font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(#3D639C, #5A93E8)
 }
 
 header {
-    background-color: #BBBBBB;
-    padding: 20px 0;
+    background-color: #243A5C;
+    /*padding: 20px 0;*/
+}
+.navbarindex{
+    background-color: #243A5C;
 }
 
-.caja{
-    width: 90vw;
+.caja {
+    width: 95vw;
     position: relative;
     margin: 0 auto;
 }
-.caja .logo{
+
+.caja .logo {
     height: 5%;
-   
+
 }
 
-nav{
+/*nav {
     position: absolute;
-    top:110px;
+    top: 110px;
     right: 0;
 }
-
-nav li{
+nav li {
     display: inline;
     margin: 0 0 0 15px;
 }
-
-nav a{
+nav a {
     text-transform: uppercase;
-    color: #000000;
+    color: #5A93E8;
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
 }
-
-nav a:hover{
-    color: #0c3ad0;
+nav a:hover {
+    color: #fefefe;
     text-decoration: underline;
-}
+}*/
 .estrenos{
     display: flex;
     flex-direction: column;
@@ -118,10 +120,9 @@ nav a:hover{
     padding: 3em;
 }
 
-footer{
-    text-align: center;
-    background: url(imagenes/bg.jpg);
-    padding:3em;
+footer {
+    background-color: #243A5C
+    
 }
 
 .copyright{
@@ -136,21 +137,49 @@ main{
     direction: row;
     height: 100%;
 }
+.concurso{
+    margin: 2em;
+    width: 50%;
+}
 
 .concurso h1{
     text-align: center;
     font-size: 3em;
     font-weight: bold;
-    color:#0c3ad0;
     padding: 1em;
+    transition: color 1s ease-in-out; /* transición de 1 segundo con aceleración y desaceleración */
+    animation: perpetuo 3s infinite; /* animación de 10 segundos que se repite infinitamente */
+}
+
+@keyframes perpetuo {
+  0% {
+    color: aliceblue; /* inicio*/
+  }
+  
+  100% {
+    color: #000000; /* fin */
+  }
 }
 .concurso p{
     padding: 1.5em;
+    color: aliceblue;
 
 }
 .concurso .imagen-concurso{
-    padding: 3em 6em;
+    display: flex;
+    justify-content: center;
+    padding: 3em ;
     max-height: 40vh;
+}
+.concurso small {
+    font-size: small;
+}
+.concurso small img{
+    vertical-align: text-bottom;
+
+}
+.inscripcion{
+    width: 50%;
 }
 form{
     margin: 4vh 4vh;
@@ -333,9 +362,13 @@ form label, form legend{
 @media screen and (max-width: 764px){
     main{
         width: inherit;
+        display: flex;
+        flex-direction: column;
     }
     /* agregar navbar media */
-    
+    .navbar{
+        justify-content: space-around;
+    }
     /* contacto pag */
     .formulario-consulta{
         margin: 1em;
@@ -343,9 +376,15 @@ form label, form legend{
     .social-media .social{
         margin-right: 2em;
     }
+    .inscripcion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
     form {
         margin: 2vh 2vh;
-        width: 50%;
+        width: 80%;
     }
     
     form label,
@@ -388,6 +427,14 @@ form label, form legend{
     }
     .social-media{
         margin: 1em;
+    }
+    .concurso{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+        align-items: center;
     }
 
 }
