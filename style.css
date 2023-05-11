@@ -10,6 +10,19 @@ header {
 .navbarindex{
     background-color: #243A5C;
 }
+.navbar-back{
+    font-size: large; 
+    background-color:#243A5C;
+}
+.navbar-colorcustom{
+   color: #ffff;
+   font-size: xx-large;
+
+
+}
+.nav-pills .nav-link {
+    color: #ffff;
+}
 
 .caja {
     width: 95vw;
@@ -27,10 +40,14 @@ header {
     top: 110px;
     right: 0;
 }
+
 nav li {
     display: inline;
     margin: 0 0 0 15px;
 }
+
+
+
 nav a {
     text-transform: uppercase;
     color: #5A93E8;
@@ -38,16 +55,21 @@ nav a {
     font-size: 22px;
     text-decoration: none;
 }
+
+
 nav a:hover {
     color: #fefefe;
     text-decoration: underline;
 }*/
-.estrenos{
+
+
+.estrenos {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.peliculas{
+
+.peliculas {
     display: flex;
     direction: row;
     width: 90%;
@@ -55,7 +77,7 @@ nav a:hover {
     padding: 50px;
 }
 
-.peliculas li{
+.peliculas li {
     display: inline-block;
     text-align: center;
     width: 30%;
@@ -67,52 +89,65 @@ nav a:hover {
     border-radius: 10px;
 }
 
-.peliculas li:hover{
-    border-color:#0c3ad0;
+.peliculas li:hover {
+    border-color: #0c3ad0;
 }
 
-.peliculas li:active{
-    border-color:#c51414;
+.peliculas li:active {
+    border-color: #c51414;
 }
 
-.peliculas h2{
+.peliculas h2 {
     font-size: 30px;
     font-weight: bold;
-    
+
 }
 
-.peliculas li:hover h2{
+.peliculas li:hover h2 {
     font-size: 33px;
 }
 
-.descripcion-peli{
+.descripcion-peli {
     font-size: 22px;
 }
 
-.fecha-estreno{
+.fecha-estreno {
     font-size: 20px;
-    margin-top:10px;
+    margin-top: 10px;
 }
+
 /*carousel style*/
 .proximos {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    
-  }
 
-  .carousel1, .carousel2 {
-    width: 50%; /* ajusta el ancho de cada carrusel */
-  }
-  .carousel2 .carousel-caption{
+}
+
+
+.carousel1,
+.carousel2{
+    width: 50%;
+    /* ajusta el ancho de cada carrusel */
+}
+
+.carousel2 .carousel-caption {
     color: #000000;
-  }
-
-
+}
+.c-img{
+    height: 100% ;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.c-item{
+    height: 480px;
+    
+    
+}
 
 
 /*Video style*/
-.estrenos .diferenciales{
+.estrenos .diferenciales {
     width: 90%;
     direction: column;
     text-align: center;
@@ -122,27 +157,21 @@ nav a:hover {
 
 footer {
     background-color: #243A5C
-    
-}
-
-.copyright{
-    color:#FFFFFF;
-    font-size: 13px;
-    margin:1em;
 }
 
 /*pagina concurso style*/
-main{
+main {
     display: flex;
     direction: row;
     height: 100%;
+    background: linear-gradient(#3D639C, #5A93E8)
 }
 .concurso{
     margin: 2em;
     width: 50%;
 }
 
-.concurso h1{
+.concurso h1 {
     text-align: center;
     font-size: 3em;
     font-weight: bold;
@@ -160,11 +189,13 @@ main{
     color: #000000; /* fin */
   }
 }
-.concurso p{
+
+.concurso p {
     padding: 1.5em;
     color: aliceblue;
 
 }
+
 .concurso .imagen-concurso{
     display: flex;
     justify-content: center;
@@ -186,26 +217,27 @@ form{
     width: 50%;
 }
 
-form label, form legend{
+form label,
+form legend {
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
     color: aliceblue;
 }
 
-.input-padron{
+.input-padron {
     display: block;
     margin: 0 2em 2em 0;
     padding: 10px 25px;
     width: 30vw;
 }
 
-.checkbox{
-    margin:20px 0;
+.checkbox {
+    margin: 20px 0;
 }
 /* boton enviar */
 
-.enviar{
+.enviar {
     width: 40%;
     padding: 15px 0;
     margin-left: 1em;
@@ -216,7 +248,7 @@ form label, form legend{
     border: none;
     border-radius: 5px;
     transition: 1s all;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .enviar:hover {
@@ -225,72 +257,94 @@ form label, form legend{
 }
 
 /*index style*/
-.index{
+.index {
     display: flex;
     flex-direction: column;
 }
-.banner{
+
+.banner {
     width: 100%;
     height: 55vh;
 }
 
-.principal{
+.principal {
     padding: 3em 0;
-    background: #FEFEFE;
     width: 940px;
-    margin: 0 auto; 
+    margin: 0 auto;
+    color: aliceblue;
 }
 
-.titulo-principal{
+.titulo-principal {
     text-align: center;
     font-size: 2em;
     margin: 0 0 1em;
-    clear:left;
+    clear: left;
+    color: aliceblue;
 }
 
-.principal p{
+.principal p {
     margin: 0 0 1em;
+   
 }
 
-.principal strong{
+.principal strong {
     font-weight: bold;
 }
 
-.principal em{
+.principal em {
     font-style: italic;
 }
 
-.logo-vacio{
+.logo-vacio {
     width: 5em;
-    float:left;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.logo-black {
+    width: 7em;
+    float: left;
     margin: 0 20px 20px 0;
 }
 
-.mapa{
-    
+.mapa {
+
     width: 100%;
     padding: 3em 0;
-    background: linear-gradient(#FEFEFE, #888888)
+    background: linear-gradient(#3D639C, #5A93E8)
 }
 
-.mapa p{
+.mapa p {
     margin: 0 0 2em;
     text-align: center;
+    color: aliceblue;
+
 }
 
-.mapa-contenido{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 940px;
-    margin: 0 auto;
-    
+.mapa-contenido {
+
+    overflow:hidden;
+    padding-bottom:30%;
+    position:relative;
+    height:0;
+}
+.mapa-contenido iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
-.video{
+.video {
     width: 560px;
     margin: 1em auto;
 }
+.pfooter{
+    margin-bottom: 0rem;
+}
+
+
+@media screen and (max-width:480px) {
 /* style Contacto */
 .social-media{
     margin: 3em;
@@ -442,10 +496,14 @@ form label, form legend{
     h1 {
         text-align: center;
     }
-    nav{
+
+    /*nav {
         position: static;
-    }
-    .caja, .principal, .mapa-contenido, .video {
-        width: auto;
-    }
+    }*/
 }
+    .caja,
+    .principal,
+    .mapa-contenido,
+    .video {
+        width: auto;
+    }}
