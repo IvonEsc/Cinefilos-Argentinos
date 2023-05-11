@@ -129,8 +129,9 @@ nav a:hover {
 }
 .c-img{
     height: 100% ;
-    object-fit: cover;
-    filter: brightness(0.6);
+    object-fit:contain;
+    background:linear-gradient( #385f9a, #0d1c31);
+    
 }
 .c-item{
     height: 480px;
