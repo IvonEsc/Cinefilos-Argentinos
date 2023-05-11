@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(#3D639C, #5A93E8)
 }
 
 header {
@@ -17,10 +18,12 @@ header {
    color: #ffff;
    font-size: xx-large;
 
+
 }
 .nav-pills .nav-link {
     color: #ffff;
 }
+
 .caja {
     width: 95vw;
     position: relative;
@@ -43,6 +46,8 @@ nav li {
     margin: 0 0 0 15px;
 }
 
+
+
 nav a {
     text-transform: uppercase;
     color: #5A93E8;
@@ -51,10 +56,12 @@ nav a {
     text-decoration: none;
 }
 
+
 nav a:hover {
     color: #fefefe;
     text-decoration: underline;
 }*/
+
 
 .estrenos {
     display: flex;
@@ -150,7 +157,6 @@ nav a:hover {
 
 footer {
     background-color: #243A5C
-    
 }
 
 /*pagina concurso style*/
@@ -160,27 +166,53 @@ main {
     height: 100%;
     background: linear-gradient(#3D639C, #5A93E8)
 }
+.concurso{
+    margin: 2em;
+    width: 50%;
+}
 
 .concurso h1 {
     text-align: center;
     font-size: 3em;
     font-weight: bold;
-    color: #0c3ad0;
     padding: 1em;
+    transition: color 1s ease-in-out; /* transición de 1 segundo con aceleración y desaceleración */
+    animation: perpetuo 3s infinite; /* animación de 10 segundos que se repite infinitamente */
+}
+
+@keyframes perpetuo {
+  0% {
+    color: aliceblue; /* inicio*/
+  }
+  
+  100% {
+    color: #000000; /* fin */
+  }
 }
 
 .concurso p {
     padding: 1.5em;
+    color: aliceblue;
 
 }
 
-
-.concurso .imagen-concurso {
-    padding: 3em 6em;
+.concurso .imagen-concurso{
+    display: flex;
+    justify-content: center;
+    padding: 3em ;
     max-height: 40vh;
 }
+.concurso small {
+    font-size: small;
+}
+.concurso small img{
+    vertical-align: text-bottom;
 
-form {
+}
+.inscripcion{
+    width: 50%;
+}
+form{
     margin: 4vh 4vh;
     width: 50%;
 }
@@ -384,9 +416,13 @@ form legend {
 @media screen and (max-width: 764px){
     main{
         width: inherit;
+        display: flex;
+        flex-direction: column;
     }
     /* agregar navbar media */
-    
+    .navbar{
+        justify-content: space-around;
+    }
     /* contacto pag */
     .formulario-consulta{
         margin: 1em;
@@ -394,9 +430,15 @@ form legend {
     .social-media .social{
         margin-right: 2em;
     }
+    .inscripcion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
     form {
         margin: 2vh 2vh;
-        width: 50%;
+        width: 80%;
     }
     
     form label,
@@ -439,6 +481,14 @@ form legend {
     }
     .social-media{
         margin: 1em;
+    }
+    .concurso{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+        align-items: center;
     }
 
 }
