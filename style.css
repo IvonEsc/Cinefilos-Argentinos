@@ -450,12 +450,10 @@ form legend {
     /*nav {
         position: static;
     }*/
-
+}
     .caja,
     .principal,
     .mapa-contenido,
     .video {
         width: auto;
-    }
-
-}
+    }}
