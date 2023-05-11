@@ -17,93 +17,71 @@
 
 <body>
 <!-- NavBar -->
-    <nav class="navbar navbar-expand-sm navbar-dark mb-0 h5"  style="background-color: #243A5C;">
-        <div class="container">
+<nav class="navbar navbar-back">
+    <div class="container">
+      <a class="navbar-brand navbar-colorcustom" href="index.html">
+        <img src="imagenes/logo-blanco.png" alt="Logo" width="70" height="55" class="d-inline-block align-text-center">
+        Cinefilos Argentinos
+      </a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Main</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="pelis.html">Estrenos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="concursos.html">Concursos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-            <a class="navbar-brand"  href="#">
-                <img src="imagenes/logo-blanco.png" alt="" width="90" height="82" class="d-inline-block "
-                    href="index.html">Cinefilos Argentinos
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="pelis.html">Peliculas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="concursos.html">Concursos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
 
-                <form class="d-flex">
+  <div class="row justify-content-center">
 
-                </form>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="text" placeholder="Buscar">
-                    <button class="btn btn-primary" type="button">Buscar</button>
-                </form>
-            </div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+
         </div>
-    </nav>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active c-item" data-bs-interval="4000">
+                <img src="imagenes/john.jpg" c-img class="d-block w-100" alt="...">
+                
+            </div>
+            <div class="carousel-item c-item" data-bs-interval="4000">
+                <img src="imagenes/Guardianes.jpeg" c-img class="d-block w-100" alt="...">
+                
+            </div>
+            <div class="carousel-item c-item" data-bs-interval="4000">
+                <img src="imagenes/suzume.jpg" c-img class="d-block w-100" alt="...">
+                
+            </div>
+
+        </div>
+        
+    </div>
+
+</div>
+
 
     <main class="index">
 
         <!-- Carousel principal -->
-        <div class="row justify-content-center">
-
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-
-                <div class="carousel-inner">
-                    <div class="carousel-item active c-item" data-bs-interval="4000">
-                        <img src="imagenes/john.jpg" c-img class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item c-item" data-bs-interval="4000">
-                        <img src="imagenes/john.jpg" c-img class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item c-item" data-bs-interval="4000">
-                        <img src="imagenes/John.jpg" c-img class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-        </div>
-
+        
+        
+    
         <div class="principal">
 
             <h2 class="titulo-principal">Cinefilos Argentinos</h2>
@@ -152,11 +130,11 @@
                 <!--Grid row-->
                 <div class="row">
                     <!-- Grid column -->
-                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 pfooter">
+                        <h6 class="pfooter text-uppercase  font-weight-bold ">
                             Cinefilos Argentinos
                         </h6>
-                        <p>
+                        <p class="pfooter">
                             Somos cinefilos y argentinos. En este sitio vas a encontrar
                             toda la mejor informacion sobre los estrenos y las peliculas clasicas
                         </p>
@@ -167,17 +145,17 @@
 
                     <!-- Grid column -->
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">Links de la web</h6>
-                        <p>
+                        <h6 class="pfooter text-uppercase  font-weight-bold">Links de la web</h6>
+                        <p class="pfooter">
                             <a href="index.html">Home</a>
                         </p>
-                        <p>
+                        <p class="pfooter">
                             <a href="pelis.html">Estrenos</a></a>
                         </p>
-                        <p>
+                        <p class="pfooter">
                             <a href="concursos.html">Concursos</a>
                         </p>
-                        <p>
+                        <p class="pfooter">
                             <a href="contacto.html">Contacto</a>
                         </p>
                     </div>
@@ -190,16 +168,16 @@
 
                     <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
-                        <p><i class="fas fa-home mr-3"></i> Buenos Aires, Argentina</p>
-                        <p><i class="fas fa-envelope mr-3"></i> infoCA@gmail.com</p>
-                        <p><i class="fas fa-phone mr-3"></i> +954 11 2345 6789</p>
+                        <h6 class="pfooter text-uppercase font-weight-bold">Contacto</h6>
+                        <p class="pfooter"><i class="fas fa-home mr-3"></i> Buenos Aires, Argentina</p>
+                        <p class="pfooter"><i class="fas fa-envelope mr-3"></i> infoCA@gmail.com</p>
+                        <p class="pfooter"><i class="fas fa-phone mr-3"></i> +954 11 2345 6789</p>
                     </div>
                     <!-- Grid column -->
 
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">Seguinos</h6>
+                        <h6 class="text-uppercase font-weight-bold">Seguinos</h6>
 
                         <!-- Facebook -->
                         <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998"
