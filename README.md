@@ -15,7 +15,7 @@ Consta de 4 paginas webs (home, estrenos, concursos y contacto). Sus funciones e
 
 ✅Mapa de ubicación de cines: la página principal cuenta con un mapa interactivo en el que los usuarios pueden buscar cines cercanos y obtener información sobre las películas que se proyectan en ellos.
 
-✅Películas: se incluye una página dedicada a la navegación de películas en estreno por medio de un carrusel que permite ver las opciones disponibles.
+✅Películas: se incluye una página dedicada a la navegación de películas en estreno por medio de tarjetas que permite ver las opciones disponibles.
 
 ✅Formulario de concurso: se ha implementado un formulario que permite a los usuarios participar en un concurso relacionado con las películas en estreno.
 
@@ -50,7 +50,7 @@ La página de inicio de la web cuenta con un carusel perpetuo que muestra imáge
 
 __🌠Página de estrenos__
 
-La página de estrenos cuenta con un carrusel de películas con su respectiva sinopsis. El carrusel corre hacia la dirección indicada por el usuario. Esta página también cuenta con un enlace a un video de resumen, modificado para que inicie su reproduccion en el momento deseado.
+La página de estrenos cuenta tarjetas de películas con su respectiva sinopsis y fecha de estreno, las cuales tienen una leve transformacion al posar el cursor sobre ellas. Esta página también cuenta con un enlace a un video de resumen, modificado para que inicie su reproduccion en el momento deseado.
 
 __🏆Página de concursos__
 
