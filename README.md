@@ -6,7 +6,7 @@
 
 Esta es una página web que ofrece una serie de funcionalidades para los usuarios interesados en conocer las películas en estreno y los cines cercanos en los que se proyectan.
 
-Consta de 4 paginas webs (home, estrenos, concursos y contacto). Sus funciones estan descriptas en el apartado del mismo nombre.
+Consta de 4 paginas webs (home, estrenos, concursos y contacto),descriptas en el apartado de Funciones.
 
 
 ## ❇️ Caracteristicas Principales
@@ -67,13 +67,28 @@ Los formularios de las paginas concursos y contacto, están diseñados para reco
 
 ### Servicio de API
 
-**Formspree.io** es un servicio de procesamiento de formularios en línea que se encarga de enviar los datos recopilados del formulario a una dirección de correo electrónico específica en forma de correo electrónico. 
-Cuando un usuario completa y envía un formulario de contacto o de concursos, los datos del formulario se recopilan y se envían automáticamente a través de la API Formspree.io.
+**SheetMonkey.io** le permite a los formularios HTML proporcionarle puntos finales únicos y seguros que envían los datos directamente a Google Sheets.
+Cuando un usuario completa y envía un formulario de contacto o de concursos, los datos del formulario se recopilan y se envían automáticamente a una planilla de google drive.
+Esto permite que los propietarios de la página web reciban los datos del formulario y los utilicen para ponerse en contacto con los usuarios o para utilizarlos en otros fines.
 
-Una vez que se han enviado los datos del formulario, Formspree.io los procesa y los envía al correo electrónico designado. Esto permite que los propietarios de la página web reciban los datos del formulario y los utilicen para ponerse en contacto con los usuarios o para utilizarlos en otros fines.
-
-De esta manera, los usuarios pueden estar seguros de que los datos que proporcionan a través de los formularios de contacto y concursos se procesan de manera segura y se envían a la dirección de correo electrónico correspondiente para su procesamiento adicional.
 ## Demo
 
-distintas capturas de la pagina 
+![Home SrceenShot](imagenes/home.jpg)
+
+![Peliculas SrceenShot](imagenes/peliculas.jpg)
+
+![Concurso SrceenShot](imagenes/concurso.jpg)
+
+![Contacto SrceenShot](imagenes/contacto.jpg)
+
+## 🔏Autores
+
+#### Hecho por el grupo 5 :
+
+⚜️**Victor Galarza** - [@VictorGalarza](https://github.com/VictorGalarza)
+
+⚜️**Ivon E. Escobar** - [@IvonEsc](https://github.com/IvonEsc) 
+
+⚜️**Mariano Fleming** - [@MAF1984](https://github.com/MAF1984)
+
 

@@ -40,21 +40,24 @@
         </div>
     </nav>
     <main>
-            <form class="formulario-consulta">
-                <label for="nombreapellido">Nombre y Apellido</label>
-                <input type="text" id="nombreapellido" class="input-padron" required>
-
-                <label for="correoelectronico">Correo Electrónico</label>
-                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
-                <label for="mensaje">Mensaje</label>
-                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required placeholder="Escribe tu consulta aquí ..."></textarea>
-                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de Cinefilos Argentinos?</label>                
+            <form id="consultaForm" class="formulario-consulta" action="https://api.sheetmonkey.io/form/cSDhURv2K8LFvPwU11SMDG" method="post">
                 
-                <input type="submit" value="Enviar" class="enviar">
+                <label>Nombre y Apellido<input type="text" name="user_name" id="nombreapellido" class="input-padron" required></label>
+                
+                <label>Email</label><input type="email" name="user_email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com"></label>
+                
+                <label>Tu Mensaje: <textarea name="user_menssage" cols="70" rows="10" id="mensaje" class="input-padron" required placeholder="Escribe tu consulta aquí ..."></textarea></label>
+                
+                <label class="checkbox"><input type="checkbox" checked name="user_news">¿Le gustaría recibir novedades de Cinefilos Argentinos?</label>                
+                
+                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" /> <!-- este imput oculto guarda la hora de envio del form para la base de datos -->
+                
+                <button type="submit" class="enviar">Enviar</button>
 
             </form>
+
             <div class="social-media">
-                <div class="contacto">
+                <div class="contacto">o
                     <h6>Contactanos:</h6>
                     <p><i class="fas fa-home mr-3"></i> Buenos Aires, Argentina</p>
                     <p><i class="fas fa-envelope mr-3"></i> infoCA@gmail.com</p>
@@ -148,6 +151,12 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
+    <!-- script de formularios -->
+    <script src="scripts.js"> </script>   
+    <!-- Alert modificado -->
+    <div id="custom-alert"></div>
+    
+
 </body>
 </html>
 

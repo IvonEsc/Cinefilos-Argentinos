@@ -51,21 +51,18 @@
             <p><small><img src="imagenes/icon.svg" alt="Alerta">Sorteo solo para residentes dentro del territorio Argentino y mayores de 18 años.</small></p>
         </div>
         <div class="inscripcion">
-            <form class="formulario-concurso">
-                <label for="nombreapellido">Nombre y Apellido</label>
-                <input type="text" id="nombreapellido" class="input-padron" required>
+            <form id="concursoForm" class="formulario-concurso" action="https://api.sheetmonkey.io/form/srq7oRMsFpPb5XA8VXVUhc">
+                <label>Nombre y Apellido<input type="text" id="nombreapellido" class="input-padron" name="user_name" required></label>
+                
 
-                <label for="dni">DNI (Ducumento Unico de Identidad)</label>
-                <input type="text" id="dni" class="input-padron" required>
+                <label>DNI (Ducumento Unico de Identidad)<input type="text" id="dni" class="input-padron" name="user_DNI" required></label>
+                <div id="dniError" class="error-message"></div>
 
-                <label for="correoelectronico">Correo Electrónico</label>
-                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+                <label>Correo Electrónico<input type="email" id="correoelectronico" name="user_email" class="input-padron" required placeholder="email@dominio.com"></label>
+                
 
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
-
-                <label for="mensaje">Mensaje</label>
-                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+                <label>Teléfono<input type="tel" id="telefono" name="user_telefono"class="input-padron" required placeholder="XXXXXXXXXX"></label>
+                <div id="telefonoError" class="error-message"></div>
                     
                 <fieldset>
                     <legend>¿Cómo le gustaría que lo contactemos?</legend>
@@ -78,8 +75,8 @@
                         
                 </fieldset>
 
-                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de Cinefilos Argentinos?</label>                
-                    
+                <label class="checkbox"><input type="checkbox" name="news" value="si"checked>¿Le gustaría recibir novedades de Cinefilos Argentinos?</label>                
+                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" /> <!-- este imput oculto guarda la hora de envio del form para la base de datos -->   
                 <input type="submit" value="Enviar" class="enviar">
             </form>
         </div>
@@ -184,7 +181,10 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
-    
+    <!-- script de formularios -->
+    <script src="scripts.js"> </script>   
+    <!-- Alert modificado -->
+    <div id="custom-alert"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js"
         integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn"
