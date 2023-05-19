@@ -194,6 +194,22 @@ form label, form legend{
     background: #4C7BC2;
     transform: scale(1.1);
 }
+ /* Estilos personalizados para el alert que creamos */
+ #custom-alert {
+    position: fixed;
+    top: 10vh;
+    left: 30vw;
+    right: 30vw;
+    background-color:aliceblue;
+    color: #0d1c31;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #0d1c31;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bolder;
+    display: none;
+  }
 
 /*index style*/
 .index{
