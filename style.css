@@ -703,7 +703,7 @@ form legend {
       }
     }
     .tomb_back{
-        background: url(/imagenes/lara-mid.png);
+        background: url('imagenes/lara-mid.png');
       }
     
     #ave{
@@ -726,7 +726,7 @@ form legend {
           }
           
     .guardianes_back{
-              background:url(/imagenes/g3mid.png)
+              background:url('imagenes/g3mid.png')
               }
     #wick{
                 box-shadow: 0px 0px 150px -45px #dfdddb;
@@ -736,7 +736,7 @@ form legend {
               }
               
     .wick_back{
-                background: url(/imagenes/john-mid.jpg);
+                background: url('imagenes/john-mid.jpg');
               }
     #suzu{
                 box-shadow: 0px 0px 150px -45px #dfdddb;
@@ -745,16 +745,16 @@ form legend {
                 }
               }
     .suzu_back{
-                background: url(/imagenes/suzume.jpg);
+                background: url('imagenes/suzume.jpg');
               }
               
     .flash_back{
-                background: url(/imagenes/flash-mid.webp);
+                background: url('imagenes/flash-mid.webp');
               }
     .open_back{
-                background: url(/imagenes/oppen-mid.jpg);
+                background: url('imagenes/oppen-mid.jpg');
               }
 
     .t2_back{
-                background: url(imagenes/t2.jpg);
+                background: url('imagenes/t2.jpg');
               }
